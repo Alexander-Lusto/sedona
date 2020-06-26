@@ -1,1 +1,18 @@
+@font-face {
+  font-family: "PTsans";
+  src: url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
+@import "variables";
+@import "blocks/visually-hidden";
 @import "blocks/header";
+@import "blocks/preview";
+@import "blocks/features";
+@import "blocks/advantages";
+@import "blocks/order";
+@import "blocks/map";
+@import "blocks/footer";
+
