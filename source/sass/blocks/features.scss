@@ -1,0 +1,84 @@
+.features__tittle-wrapper {
+  padding: 45px 30px;
+  background-color: white;
+  background-image: url("../../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.features__tittle {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-family: "PTsans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.features__subtittle {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+}
+
+.feature {
+  background-color: #ffffff;
+  color: black;
+}
+
+.feature__text {
+  padding: 35px 25px;
+  background-color: #81b3d2;
+  color: white;
+}
+
+.feature__tittle {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feature__subtittle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.feature__subtittle,
+.feature__desc {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.feature__photo {
+  display: block;
+  width: 100%;
+}
+
+.feature--extra {
+  background-color: #eeeeee;
+}
+
+.feature--extra .feature__text {
+  margin: 0 20px;
+  background-color: transparent;
+  color: black;
+}
+
+.feature--extra:not(:last-child) .feature__text {
+  border-bottom: 1px solid #d6d6d6;
+}

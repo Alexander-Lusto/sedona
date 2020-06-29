@@ -1,0 +1,37 @@
+.order {
+  padding: 30px 20px 50px 20px;
+  background-color: white;
+}
+
+.order__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+}
+
+.order__text {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.order__button {
+  display: inline-block;
+  text-align: center;
+  width: 280px;
+  height: 58px;
+
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 58px;
+  font-weight: bold;
+  color: white;
+  background-color: #81b3d2;
+}

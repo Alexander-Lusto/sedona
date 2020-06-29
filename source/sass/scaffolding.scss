@@ -1,0 +1,37 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PTsans";
+  font-style: normal;
+  src: url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PTsans";
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
+html {
+  background-color: #282828;
+}
+
+body {
+  max-width: $mobile_width; // использовал переменные
+  margin: 0 auto;
+
+  font-family: "PTsans", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

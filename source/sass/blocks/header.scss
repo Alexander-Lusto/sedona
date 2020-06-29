@@ -1,0 +1,76 @@
+.header {
+  background-color: #ffffff;
+
+  font-family: "PTsans", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.navigation {
+  position: relative;
+  background-color: #81b3d2;
+  z-index: 1;
+}
+
+.navigation--close {
+  display: none;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  min-height: 55px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:last-child { // использовал вложенность
+    border-bottom: none;
+    z-index: -1;
+  }
+}
+
+.navigation__link {
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.navigation__close-menu-btn,
+.header__open-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+
+  cursor: pointer;
+}
+
+.header__menu {
+  position: relative;
+  min-height: 56px;
+  background-color: #ffffff;
+  box-shadow: 0 -3px  7px 0 rgba(0, 0, 0, 0.2);
+
+  z-index: 2;
+}
+
+$header_logo_size: 102px;
+
+.header__logo {
+  position: absolute;
+  right: $mobile_width / 2 - $header_logo_size / 2; // использовал математические операции
+  top: 0;
+}

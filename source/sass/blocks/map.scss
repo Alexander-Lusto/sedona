@@ -1,0 +1,37 @@
+/* $map_width_mobile: 320px;
+$map_heigth_mobile: 350px;
+
+$big_pin_radius_mobile: 27px;
+$small_pin_radius_mobile: 17px;
+
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: $map_heigth_mobile / 2 - $big_pin_radius_mobile / 2;
+    left: $map_width_mobile / 2 - $big_pin_radius_mobile / 2;
+    display: inline-block;
+    width: $big_pin_radius_mobile;
+    height: $big_pin_radius_mobile;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: $map_heigth_mobile / 2  - $small_pin_radius_mobile / 2;
+    left: $map_width_mobile / 2  - $small_pin_radius_mobile / 2;
+    display: inline-block;
+    width: $small_pin_radius_mobile;
+    height: $small_pin_radius_mobile;
+    background-color: #81b4d4;
+    border-radius: 50%;
+  }
+} */
+
+.map__google-map {
+  width: 100%;
+}
