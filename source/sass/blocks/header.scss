@@ -1,22 +1,3 @@
-html {
-  background-color: #282828;
-}
-
-
-body {
-  max-width: $mobile_width; // использовал переменные
-  margin: 0 auto;
-
-  font-family: "PTsans", sans-serif;
-  font-size: 18px;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
-
 .header {
   background-color: #ffffff;
 
@@ -28,10 +9,14 @@ body {
   color: #ffffff;
 }
 
-.header__navigation {
+.navigation {
   position: relative;
   background-color: #81b3d2;
   z-index: 1;
+}
+
+.navigation--close {
+  display: none;
 }
 
 .navigation__list {

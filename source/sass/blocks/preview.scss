@@ -2,8 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 389px;
+  background-size: contain;
+  padding: 27.5% 0;
   background-image: url("../img/intro-triangle.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.preview__text {
+  width: 87.5%;
 }

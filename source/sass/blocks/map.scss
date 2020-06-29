@@ -1,4 +1,4 @@
-$map_width_mobile: 320px;
+/* $map_width_mobile: 320px;
 $map_heigth_mobile: 350px;
 
 $big_pin_radius_mobile: 27px;
@@ -30,4 +30,8 @@ $small_pin_radius_mobile: 17px;
     background-color: #81b4d4;
     border-radius: 50%;
   }
+} */
+
+.map__google-map {
+  width: 100%;
 }
