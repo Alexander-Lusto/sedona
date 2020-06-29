@@ -58,3 +58,22 @@
   font-weight: normal;
   color: black;
 }
+
+@media (min-height: $tablet_width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+    min-height: 120px;
+  }
+
+  .footer__text {
+    margin: 0;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+}

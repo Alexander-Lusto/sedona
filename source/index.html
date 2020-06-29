@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation navigation navigation--close">
+      <nav class="header__navigation navigation navigation--open">
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="#главная">Главная</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#галерея">Фото и видео</a></li>
@@ -16,8 +16,8 @@
         </ul>
         <img class="navigation__close-menu-btn" src="img/icon-cross.png" width="23" height="22" alt="cross">
       </nav>
+      <img class="header__logo" src="img/logotype-mobile.png" width="102" height="83" alt="logo">
       <div class="header__menu">
-        <img class="header__logo" src="img/logotype-mobile.png" width="102" height="83" alt="logo">
         <img class="header__open-menu-btn" src="img/icon-menu.png" width="23" height="21" alt="hamburger menu">
       </div>
     </header>
@@ -26,7 +26,7 @@
 
       <section class="preview">
         <h1 class="preview__title visually-hidden">Sedona</h1>
-        <img class="preview__text" src="img/text-index.png" width="280" height="213" alt="preview text">
+        <img class="preview__text" src="img/text-sedona-index.svg" width="280" height="213" alt="preview text">
       </section>
 
       <section class="features">
@@ -36,12 +36,15 @@
         </div>
 
         <div class="features__item feature">
-          <div class="feature__text">
-            <h2 class="feature__tittle">Настоящий городок</h2>
-            <h3 class="feature__subtittle">— №1 —</h3>
-            <div class="feature__desc">Седона не атракцион для туристов, там течёт своя жизнь</div>
+          <div class="feature__wrapper">
+            <div class="feature__text">
+              <h2 class="feature__tittle">Настоящий городок</h2>
+              <h3 class="feature__subtittle">— №1 —</h3>
+              <div class="feature__desc">Седона не атракцион для туристов, там течёт своя жизнь</div>
+            </div>
+            <img class="feature__photo" src="img/photo-city@1x.jpg" width="320" height="260" alt="photo of the city">
           </div>
-          <img class="feature__photo" src="img/photo-city@1x.jpg" width="320" height="260" alt="photo of the city">
+
           <div class="feature__advantages advantages">
             <div class="advantages__item">
               <svg class="advantages__icon" width="37" height="38" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.695px" height="72.346px" viewBox="0 0 74.695 72.346" enable-background="new 0 0 74.695 72.346" xml:space="preserve">
@@ -87,35 +90,39 @@
         </div>
 
         <div class="features__item feature">
-          <div class="feature__text">
-            <h2 class="feature__tittle">Там есть мост дьявола</h2>
-            <h3 class="feature__subtittle">— №2 —</h3>
-            <div class="feature__desc">Да, по нему можно пройтись, если вы осмелитесь конечно</div>
-          </div>
-          <img class="feature__photo" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="photo of the city">
-        </div>
-
-        <div class="features__item feature feature--extra">
-          <div class="feature__text">
-            <h2 class="feature__tittle">Небольшая площадь</h2>
-            <h3 class="feature__subtittle">— №3 —</h3>
-            <div class="feature__desc">Все интересные места находятся очень близко</div>
+          <div class="feature__wrapper feature__wrapper--reverse">
+            <div class="feature__text">
+              <h2 class="feature__tittle">Там есть мост дьявола</h2>
+              <h3 class="feature__subtittle">— №2 —</h3>
+              <div class="feature__desc">Да, по нему можно пройтись, если вы осмелитесь конечно</div>
+            </div>
+            <img class="feature__photo" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="photo of the city">
           </div>
         </div>
 
-        <div class="features__item feature feature--extra">
-          <div class="feature__text">
-            <h2 class="feature__tittle"> Красивая дорога</h2>
-            <h3 class="feature__subtittle">— №4 —</h3>
-            <div class="feature__desc">Ехать в седону из Лас-Вегаса совсем не скучно!</div>
+        <div class="features__wrapper">
+          <div class="features__item feature feature--extra">
+            <div class="feature__text">
+              <h2 class="feature__tittle">Небольшая площадь</h2>
+              <h3 class="feature__subtittle">— №3 —</h3>
+              <div class="feature__desc">Все интересные места находятся очень близко</div>
+            </div>
           </div>
-        </div>
 
-        <div class="features__item feature feature--extra">
-          <div class="feature__text">
-            <h2 class="feature__tittle">Мало туристов</h2>
-            <h3 class="feature__subtittle">— №5 —</h3>
-            <div class="feature__desc">Большинство едет в Гранд Каньон и толпиться там</div>
+          <div class="features__item feature feature--extra">
+            <div class="feature__text">
+              <h2 class="feature__tittle"> Красивая дорога</h2>
+              <h3 class="feature__subtittle">— №4 —</h3>
+              <div class="feature__desc">Ехать в седону из Лас-Вегаса совсем не скучно!</div>
+            </div>
+          </div>
+
+          <div class="features__item feature feature--extra">
+            <div class="feature__text">
+              <h2 class="feature__tittle">Мало туристов</h2>
+              <h3 class="feature__subtittle">— №5 —</h3>
+              <div class="feature__desc">Большинство едет в Гранд Каньон и толпиться там</div>
+            </div>
           </div>
         </div>
       </section>
@@ -127,8 +134,8 @@
       </section>
 
       <section class="map">
-        <img class="visually-hidden" src="img/map-mobile.jpg" width="320" height="350" alt="map">
-        <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680702.9477671194!2d-112.5737876676807!3d34.63896759238777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1593354304059!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <!-- <img class="visually-hidden" src="img/map-mobile.jpg" width="320" height="350" alt="map"> -->
+        <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680702.9477671194!2d-112.5737876676807!3d34.63896759238777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1593354304059!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
 
     </main>
