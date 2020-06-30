@@ -1,5 +1,14 @@
 $header_min_height: 56px;
 
+$header_logo_mobile_width: 102px;
+$header_logo_mobile_height: 83px;
+
+$header_logo_tablet_width: 102px;
+$header_logo_tablet_height: 83px;
+
+$header_logo_desktop_width: 187px;
+$header_logo_desktop_height: 96px;
+
 .header {
   position: relative;
   min-height: 56px;
@@ -19,7 +28,7 @@ $header_min_height: 56px;
   z-index: 1;
 }
 
-.navigation--close {
+.navigation--closed {
   display: none;
 }
 
@@ -57,7 +66,6 @@ $header_min_height: 56px;
   height: 100%;
   text-align: center;
   text-decoration: none;
-
   color: #ffffff;
 }
 
@@ -79,26 +87,14 @@ $header_min_height: 56px;
   z-index: 2;
 }
 
-$header_logo_width: 102px;
-$header_logo_height: 83px;
-
 .header__logo {
   position: absolute;
-  right: $mobile_width / 2 - $header_logo_width / 2; // использовал математические операции
-  bottom: - $header_logo_height + $header_min_height;
+  right: $mobile_width / 2 - $header_logo_mobile_width / 2; // использовал математические операции
+  bottom: - $header_logo_mobile_height + $header_min_height;
   z-index: 3;
 }
 
-/* .navigation--open .navigation__logo {
-  top: auto;
-  bottom: -10px;
-} */
-
 @media (min-width: $tablet_width) {
-  .header {
-    width: $tablet_width;
-  }
-
   .header__menu {
     display: none;
   }
@@ -109,6 +105,10 @@ $header_logo_height: 83px;
 
   .navigation {
     background-color: #ffffff;
+  }
+
+  .navigation--closed {
+    display: block;
   }
 
   .navigation__list {
@@ -132,16 +132,59 @@ $header_logo_height: 83px;
     margin-left: auto;
   }
 
+  .navigation__item:last-child {
+    z-index: 1;
+}
+
   .navigation__link {
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: black;
   }
 
+  .navigation__link:hover {
+    color: #81b3d2;
+  }
+
+  .navigation__link:active {
+    color: #cacaca;
+  }
+
+  .navigation__link--active {
+    color: #766357;
+  }
+
+  .navigation__link--active:hover {
+    color: #604e43;
+  }
+
+  .navigation__link--active:active {
+    color: #dbd8d5;
+  }
+
   .header__logo {
-    right: $tablet_width / 2 - $header_logo_width / 2;
+    width: $header_logo_tablet_width;
+    height: $header_logo_tablet_height;
+    right: $tablet_width / 2 - $header_logo_tablet_width / 2;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation__item {
+    width: 240px;
+  }
+
+  .header__logo {
+    width: $header_logo_desktop_width;
+    height: $header_logo_desktop_height;
+    right: ($desktop_width - 80px) / 2 - $header_logo_desktop_width / 2;
+    bottom: - $header_logo_desktop_height + $header_min_height;
   }
 }
