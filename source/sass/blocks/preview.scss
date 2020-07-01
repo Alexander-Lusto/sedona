@@ -2,16 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: contain;
-  padding: 27.5% 0;
+  // padding: 27.5% 0;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-.preview__text {
-  width: 87.5%;
+.preview--form {
+  min-height: 160px;
 }
+
+/* .preview__text {
+  width: 87.5%;
+} */
 
 
 @media (min-width: $tablet_width) {
