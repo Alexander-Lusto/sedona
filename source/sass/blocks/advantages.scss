@@ -34,3 +34,38 @@
   margin-right: 10px;
   fill: #81b3d2;
 }
+
+@media (min-width: $tablet_width) {
+  .advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 45px;
+  }
+
+  .advantages__item {
+    display: block;
+    text-align: center;
+    width: 190px;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .advantages__icon {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 75px;
+    height: 77px;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+  }
+
+  .advantages__desc {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}

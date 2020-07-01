@@ -1,12 +1,25 @@
+$header_min_height: 56px;
+
+$header_logo_mobile_width: 102px;
+$header_logo_mobile_height: 83px;
+
+$header_logo_tablet_width: 102px;
+$header_logo_tablet_height: 83px;
+
+$header_logo_desktop_width: 187px;
+$header_logo_desktop_height: 96px;
+
 .header {
+  position: relative;
+  min-height: 56px;
   background-color: #ffffff;
+  z-index: 2;
 
   font-family: "PTsans", sans-serif;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .navigation {
@@ -15,7 +28,15 @@
   z-index: 1;
 }
 
-.navigation--close {
+.navigation--closed {
+  display: none;
+}
+
+.navigation--no-js {
+  display: block;
+}
+
+.navigation--no-js .navigation__close-menu-btn {
   display: none;
 }
 
@@ -45,7 +66,6 @@
   height: 100%;
   text-align: center;
   text-decoration: none;
-
   color: #ffffff;
 }
 
@@ -67,10 +87,104 @@
   z-index: 2;
 }
 
-$header_logo_size: 102px;
-
 .header__logo {
   position: absolute;
-  right: $mobile_width / 2 - $header_logo_size / 2; // использовал математические операции
-  top: 0;
+  right: $mobile_width / 2 - $header_logo_mobile_width / 2; // использовал математические операции
+  bottom: - $header_logo_mobile_height + $header_min_height;
+  z-index: 3;
+}
+
+@media (min-width: $tablet_width) {
+  .header__menu {
+    display: none;
+  }
+
+  .navigation__close-menu-btn {
+    display: none;
+  }
+
+  .navigation {
+    background-color: #ffffff;
+  }
+
+  .navigation--closed {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__item {
+    width: 153px;
+    min-height: 56px;
+    border: none;
+
+    background-color: transparent;
+  }
+
+  .navigation__item:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .navigation__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .navigation__item:last-child {
+    z-index: 1;
+}
+
+  .navigation__link {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  .navigation__link:hover {
+    color: #81b3d2;
+  }
+
+  .navigation__link:active {
+    color: #cacaca;
+  }
+
+  .navigation__link--active {
+    color: #766357;
+  }
+
+  .navigation__link--active:hover {
+    color: #604e43;
+  }
+
+  .navigation__link--active:active {
+    color: #dbd8d5;
+  }
+
+  .header__logo {
+    width: $header_logo_tablet_width;
+    height: $header_logo_tablet_height;
+    right: $tablet_width / 2 - $header_logo_tablet_width / 2;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation__item {
+    width: 240px;
+  }
+
+  .header__logo {
+    width: $header_logo_desktop_width;
+    height: $header_logo_desktop_height;
+    right: ($desktop_width - 80px) / 2 - $header_logo_desktop_width / 2;
+    bottom: - $header_logo_desktop_height + $header_min_height;
+  }
 }
