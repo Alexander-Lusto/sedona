@@ -10,9 +10,9 @@
       <header class="header">
         <nav class="header__navigation navigation navigation--closed navigation--no-js">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link navigation__link--active" href="index.html">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#галерея">Фото и видео</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="form.html">Форма отзыва</a></li>
+            <li class="navigation__item"><a class="navigation__link navigation__link--active" href="form.html">Форма отзыва</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#академия">HTML ACADEMY</a></li>
           </ul>
           <img class="navigation__close-menu-btn" src="img/icon-cross.png" width="23" height="22" alt="cross">
@@ -42,7 +42,8 @@
           <form class="review__info info">
 
             <fieldset class="info__user info__item user">
-              <h2 class="user__title title">Представьтесь</h2>
+              <h2 class="user__title title">Представьтесь:</h2>
+
               <label class="user__item">
                 Имя*: <input class="user__input input" type="text" placeholder="Пётр">
               </label>
@@ -57,22 +58,24 @@
             </fieldset>
 
             <fieldset class="info__contact info__item contact">
-              <h2 class="contact__title title">Контактная информация</h2>
-              <label class="contact__item">
-                <p class="contact__label-text"> Контактный телефон*:</p>
-                <input class="contact__input input" type="phone" name="user_phone" placeholder="Введите телефон">
-              </label>
+              <h2 class="contact__title title">Контактная информация:</h2>
+              <div class="contact__wrapper">
+                <label class="contact__item">
+                  <p class="contact__label-text"> <span class="contact__label-extra" >Контактный</span> телефон*:</p>
+                  <input class="contact__input contact__input--phone input" type="phone" name="user_phone" placeholder="Введите телефон">
+                </label>
 
-              <label class="contact__item">
-                <p class="contact__label-text"> Электронная почта*:</p>
-                <input class="contact__input input" type="email" name="user_email" placeholder="Введите e-mail">
-              </label>
+                <label class="contact__item">
+                  <p class="contact__label-text"> Электронная почта*:</p>
+                  <input class="contact__input contact__input--mail input" type="email" name="user_email" placeholder="Введите e-mail">
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="info__impression info__item impression">
               <h2 class="impression__title title">Ваше общее впечатление:</h2>
               <label class="impression__item">
-                <input class="visually-hidden" type="radio" name="impression" value="good">
+                <input class="visually-hidden" type="radio" name="impression" value="good" checked>
                 <span class="impression__input"></span>
                 Скорее положительное
               </label>
@@ -92,29 +95,31 @@
 
             <fieldset class="info__sights info__item sights">
               <h2 class="sights__title title">Посещённые достопримечательности:</h2>
-              <label class="sights__item">
-                <input class="visually-hidden" type="checkbox" name="good_impression" checked>
-                <span class="sights__input"></span>
-                Мост Дьявола
-              </label>
+              <div class="sights__wrapper">
+                <label class="sights__item">
+                  <input class="visually-hidden" type="checkbox" name="good_impression" checked>
+                  <span class="sights__input"></span>
+                  Мост Дьявола
+                </label>
 
-              <label class="sights__item">
-                <input class="visually-hidden" type="checkbox" name="bad_impression" checked>
-                <span class="sights__input"></span>
-                Гора-Колокол
-              </label>
+                <label class="sights__item">
+                  <input class="visually-hidden" type="checkbox" name="bad_impression" checked>
+                  <span class="sights__input"></span>
+                  Гора-Колокол
+                </label>
 
-              <label class="sights__item">
-                <input class="visually-hidden" type="checkbox" name="neutral_impression" checked>
-                <span class="sights__input"></span>
-                Слайд-парк
-              </label>
+                <label class="sights__item">
+                  <input class="visually-hidden" type="checkbox" name="neutral_impression" checked>
+                  <span class="sights__input"></span>
+                  Слайд-парк
+                </label>
 
-              <label class="sights__item">
-                <input class="visually-hidden" type="checkbox" name="neutral_impression">
-                <span class="sights__input"></span>
-                Красные скалы
-              </label>
+                <label class="sights__item">
+                  <input class="visually-hidden" type="checkbox" name="neutral_impression">
+                  <span class="sights__input"></span>
+                  Красные скалы
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="info__emotions info__item emotions">
@@ -122,7 +127,10 @@
               <textarea class="emotions__input input" name="user_comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
-            <button class="info__send-form-button button send-form-button">Отправить отзыв</button>
+            <div class="info__send">
+              <button class="info__send-form-button button send-form-button">Отправить отзыв</button>
+              <span class="info__note">* — обязательные поля</span>
+            </div>
           </form>
         </section>
       </main>

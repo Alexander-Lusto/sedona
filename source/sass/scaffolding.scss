@@ -14,12 +14,8 @@
     url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
-html {
-  background-color: #282828;
-}
-
 body {
-  max-width: $mobile_width; // использовал переменные
+  max-width: $mobile_width;
   margin: 0 auto;
 
   font-family: "PTsans", sans-serif;
@@ -60,5 +56,6 @@ img {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
   }
 }

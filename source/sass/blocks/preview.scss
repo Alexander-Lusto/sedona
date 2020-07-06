@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding: 27.5% 0;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -11,11 +10,6 @@
 .preview--form {
   min-height: 160px;
 }
-
-/* .preview__text {
-  width: 87.5%;
-} */
-
 
 @media (min-width: $tablet_width) {
   .preview {
@@ -27,6 +21,14 @@
   .preview__text {
     width: 460px;
     height: 350px;
+  }
+
+  .preview--form {
+    min-height: 290px;
+  }
+
+  .preview--form .preview__text {
+    height: 78px;
   }
 }
 

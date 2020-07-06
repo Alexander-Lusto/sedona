@@ -22,40 +22,6 @@
   color: #333333;
 }
 
-.button {
-  width: 280px;
-  height: 58px;
-
-  font-family: "PTsans", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-
-  background-color: #81b3d2;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-    color: #94b9d2;
-  }
-
-  &:disabled {
-    background-color: #e5e5e5;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
 @media (min-width: $tablet_width) {
   .order {
     padding: 60px 160px 60px 160px;
