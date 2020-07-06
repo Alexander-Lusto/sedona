@@ -1,0 +1,32 @@
+.contact__item {
+  display: block;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact__input--phone {
+  background-image: url("../img/icon-phone.svg"), url("../img/square.png");
+  background-repeat: no-repeat;
+  background-position: center right 20px, right;
+}
+
+.contact__input--mail {
+  background-image: url("../img/icon-mail.svg"), url("../img/square.png");
+  background-repeat: no-repeat;
+  background-position: center right 20px, right;
+}
+
+.contact__label-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet_width) {
+
+}

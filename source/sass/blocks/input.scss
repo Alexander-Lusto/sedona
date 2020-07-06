@@ -1,0 +1,22 @@
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  font-family: "PTsans", sans-serif;
+  font-weight: bold;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    color: black;
+    font-family: "PTsans", sans-serif;
+    font-weight: bold;
+  }
+}

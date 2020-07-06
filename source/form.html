@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona Form</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -39,41 +40,41 @@
           <h2 class="review__title">Оставьте свой отзыв</h2>
           <h2 class="review__desc"> Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</h2>
 
-          <form class="review__info info">
+          <form class="review__info info" method="post" action="https://echo.htmlacademy.ru">
 
             <fieldset class="info__user info__item user">
-              <h2 class="user__title title">Представьтесь:</h2>
+              <h2 class="user__title info__title">Представьтесь:</h2>
 
               <label class="user__item">
-                Имя*: <input class="user__input input" type="text" placeholder="Пётр">
+                Имя*: <input class="user__input input" type="text" name="user_name" placeholder="Пётр">
               </label>
 
               <label class="user__item">
-                Фамилия*: <input class="user__input input" type="text" placeholder="Иванов">
+                Фамилия*: <input class="user__input input" type="text" name="user_surname" placeholder="Иванов">
               </label>
 
               <label class="user__item">
-                Отчество: <input class="user__input input" type="text" placeholder="Александрович">
+                Отчество: <input class="user__input input" type="text" name="user_patronymic" placeholder="Александрович">
               </label>
             </fieldset>
 
             <fieldset class="info__contact info__item contact">
-              <h2 class="contact__title title">Контактная информация:</h2>
+              <h2 class="contact__title info__title">Контактная информация:</h2>
               <div class="contact__wrapper">
                 <label class="contact__item">
                   <p class="contact__label-text"> <span class="contact__label-extra" >Контактный</span> телефон*:</p>
-                  <input class="contact__input contact__input--phone input" type="phone" name="user_phone" placeholder="Введите телефон">
+                  <input class="contact__input contact__input--phone input" type="phone" name="user_phone" placeholder="Введите телефон" >
                 </label>
 
                 <label class="contact__item">
                   <p class="contact__label-text"> Электронная почта*:</p>
-                  <input class="contact__input contact__input--mail input" type="email" name="user_email" placeholder="Введите e-mail">
+                  <input class="contact__input contact__input--mail input" type="email" name="user_email" placeholder="Введите e-mail" >
                 </label>
               </div>
             </fieldset>
 
             <fieldset class="info__impression info__item impression">
-              <h2 class="impression__title title">Ваше общее впечатление:</h2>
+              <h2 class="impression__title info__title">Ваше общее впечатление:</h2>
               <label class="impression__item">
                 <input class="visually-hidden" type="radio" name="impression" value="good" checked>
                 <span class="impression__input"></span>
@@ -94,7 +95,7 @@
             </fieldset>
 
             <fieldset class="info__sights info__item sights">
-              <h2 class="sights__title title">Посещённые достопримечательности:</h2>
+              <h2 class="sights__title info__title">Посещённые достопримечательности:</h2>
               <div class="sights__wrapper">
                 <label class="sights__item">
                   <input class="visually-hidden" type="checkbox" name="good_impression" checked>
@@ -123,28 +124,28 @@
             </fieldset>
 
             <fieldset class="info__emotions info__item emotions">
-              <h2 class="emotions__title title"> Опишите свои эмоции:</h2>
+              <h2 class="emotions__title info__title"> Опишите свои эмоции:</h2>
               <textarea class="emotions__input input" name="user_comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
             <div class="info__send">
-              <button class="info__send-form-button button send-form-button">Отправить отзыв</button>
+              <button class="info__send-form-button button send-form-button" type="submit">Отправить отзыв</button>
               <span class="info__note">* — обязательные поля</span>
             </div>
           </form>
         </section>
       </main>
 
-      <section class="popup popup--failure visually-hidden">
+      <section class="popup popup--failure  visually-hidden">
         <h2 class="popup__title"> Что-то пошло не так!</h2>
         <p class="popup__desc"> Проверьте поля выделенные красным, скорее всего вы забыли их заполнить.</p>
-        <button class="popup_button">Ок</button>
+        <button class="popup__button button">Ок</button>
       </section>
 
       <section class="popup popup--success visually-hidden">
         <h2 class="popup__title"> Ваш отзыв отправлен!</h2>
         <p class="popup__desc"> Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="popup_button">Закрыть окно</button>
+        <button class="popup__button button">Закрыть окно</button>
       </section>
 
       <footer class="footer">
