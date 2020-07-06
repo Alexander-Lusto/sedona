@@ -44,6 +44,10 @@ img {
   margin: -1px;
 }
 
+.page__wrapper {
+  position: relative;
+}
+
 @media (min-width: $tablet_width) {
   body {
     max-width: $tablet_width;
