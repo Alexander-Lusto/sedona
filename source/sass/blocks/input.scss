@@ -14,9 +14,16 @@
 
   &::placeholder {
     font-size: 18px;
-    line-height: 26px;
     color: black;
     font-family: "PTsans", sans-serif;
     font-weight: bold;
   }
+}
+
+.input--contact {
+  padding-right: 65px;
+}
+
+.input--user {
+
 }

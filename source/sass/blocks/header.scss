@@ -22,6 +22,10 @@ $header_logo_desktop_height: 96px;
   text-transform: uppercase;
 }
 
+.header__open-menu-btn {
+  fill: #81b3d2;
+}
+
 .navigation {
   position: relative;
   background-color: #81b3d2;
@@ -67,6 +71,10 @@ $header_logo_desktop_height: 96px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+}
+
+.navigation__close-menu-btn {
+  fill: white;
 }
 
 .navigation__close-menu-btn,
