@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona Main</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,10 +13,12 @@
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#главная">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#галерея">Фото и видео</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#отзыв">Форма отзыва</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Форма отзыва</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#академия">HTML ACADEMY</a></li>
           </ul>
-          <img class="navigation__close-menu-btn" src="img/icon-cross.png" width="23" height="22" alt="cross">
+          <svg class="navigation__close-menu-btn" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+          </svg>
         </nav>
         <a class="header__logo-link" href="index.html">
           <picture>
@@ -25,7 +28,13 @@
           </picture>
         </a>
         <div class="header__menu">
-          <img class="header__open-menu-btn" src="img/icon-menu.png" width="23" height="21" alt="hamburger menu">
+          <svg class="header__open-menu-btn" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964"/>
+              <rect y="9.009" width="22.928" height="3.964"/>
+              <rect y="18.018" width="22.928" height="3.964"/>
+            </g>
+          </svg>
         </div>
       </header>
 
@@ -33,7 +42,12 @@
 
         <section class="preview">
           <h1 class="preview__title visually-hidden">Sedona</h1>
-          <img class="preview__text" src="img/text-sedona-index.svg" width="280" height="213" alt="preview text">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/text-sedona-index.svg">
+            <source media="(min-width: 768px)" srcset="img/text-sedona-index.svg">
+              <img class="preview__text" src="img/text-sedona-index.svg" width="280" height="213" alt="preview text">
+          </picture>
+
         </section>
 
         <section class="features">

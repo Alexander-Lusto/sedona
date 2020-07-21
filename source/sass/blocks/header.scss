@@ -22,6 +22,10 @@ $header_logo_desktop_height: 96px;
   text-transform: uppercase;
 }
 
+.header__open-menu-btn {
+  fill: #81b3d2;
+}
+
 .navigation {
   position: relative;
   background-color: #81b3d2;
@@ -56,7 +60,7 @@ $header_logo_desktop_height: 96px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 
-  &:last-child { // использовал вложенность
+  &:last-child {
     border-bottom: none;
     z-index: -1;
   }
@@ -67,6 +71,10 @@ $header_logo_desktop_height: 96px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+}
+
+.navigation__close-menu-btn {
+  fill: white;
 }
 
 .navigation__close-menu-btn,
@@ -82,14 +90,13 @@ $header_logo_desktop_height: 96px;
   position: relative;
   min-height: 56px;
   background-color: #ffffff;
-  box-shadow: 0 -3px  7px 0 rgba(0, 0, 0, 0.2);
 
   z-index: 2;
 }
 
 .header__logo {
   position: absolute;
-  right: $mobile_width / 2 - $header_logo_mobile_width / 2; // использовал математические операции
+  right: $mobile_width / 2 - $header_logo_mobile_width / 2;
   bottom: - $header_logo_mobile_height + $header_min_height;
   z-index: 3;
 }
@@ -134,7 +141,7 @@ $header_logo_desktop_height: 96px;
 
   .navigation__item:last-child {
     z-index: 1;
-}
+  }
 
   .navigation__link {
     font-size: 14px;

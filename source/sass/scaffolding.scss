@@ -15,11 +15,11 @@
 }
 
 html {
-  background-color: #282828;
+  background-color: #333333;
 }
 
 body {
-  max-width: $mobile_width; // использовал переменные
+  max-width: $mobile_width;
   margin: 0 auto;
 
   font-family: "PTsans", sans-serif;
@@ -44,6 +44,10 @@ img {
   margin: -1px;
 }
 
+.page__wrapper {
+  position: relative;
+}
+
 @media (min-width: $tablet_width) {
   body {
     max-width: $tablet_width;
@@ -60,5 +64,6 @@ img {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
   }
 }
