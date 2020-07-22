@@ -1,0 +1,365 @@
+.gallery {
+  padding-top: 35px;
+  margin-bottom: 47px;
+
+  background-color: #ffffff;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 20px;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+}
+
+.gallery__desc {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 20px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #333333;
+}
+
+.gallery__desc br {
+  display: none;
+}
+
+.photo {
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo__image {
+  width: 280px;
+  height: 280px;
+  //margin-bottom: 20px;
+}
+
+.photo__name {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000000;
+}
+
+.photo__author {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #333333;
+}
+
+.photo__likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo__like-button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.photo__like-amount {
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.gallery__videos {
+  margin-top: 35px;
+  margin-bottom: 115px;
+}
+
+.videos__desc {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.videos__item {
+  margin-top: 35px;
+}
+
+.video__screen {
+  position: relative;
+  height: 200px;
+}
+
+.video__panel {
+  position: absolute;
+  bottom: -71px;
+  left: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  // align-items: center;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  width: 280px;
+  height: 115px;
+  padding: 0 23px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 45px, #f2f2f2 45px);
+}
+
+.video__slider {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+
+  //background-color: rgba(0, 0, 0, 0.6);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+}
+
+.video__button--subtitles {
+  margin-left: auto;
+}
+
+.video__button {
+  vertical-align: middle;
+  height: 20px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.video__button--last {
+  margin-left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding: 60px;
+    margin-bottom: 0;
+  }
+
+  .gallery__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .gallery__desc {
+    margin-bottom: 70px;
+  }
+
+  .gallery__desc br {
+    display: block;
+  }
+
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    padding: 0;
+
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  .photo:first-child {
+    flex-grow: 1;
+    border: none;
+  }
+
+  .photo:first-child .photo__image {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__desc-wrapper {
+    min-height: 80px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo__name {
+    margin-bottom: 0;
+  }
+
+  .photo__author {
+    margin-bottom: 0;
+  }
+
+  .gallery__photos {
+    margin-bottom: 70px;
+  }
+
+  .video__screen {
+    height: 500px;
+  }
+
+  .video__preview {
+    width: 100%;
+    height: auto;
+  }
+
+  .videos__desc {
+    width: 420px;
+  }
+
+  .video__panel {
+    left: 0;
+    bottom: 0;
+
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 93px;
+
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__button-image polygon,
+  .video__button-image path {
+    fill: white;
+  }
+
+  .video__button--replay {
+    order: 1;
+  }
+
+  .video__slider {
+    flex-grow: 1;
+    margin: 0 42px;
+    order: 2;
+  }
+
+  .video__button--subtitles {
+    margin: 0;
+    order: 3;
+  }
+
+  .video__button--fullscreen {
+    order: 4;
+  }
+
+  .gallery__videos {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    padding: 0;
+  }
+
+  .gallery__title {
+    margin-top: 100px;
+  }
+
+  .photo {
+    position: relative;
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo:first-child {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo:first-child .photo__image {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo__desc-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__name {
+    color: white;
+  }
+
+  .photo__author {
+    color: white;
+  }
+
+  .photo__like-amount {
+    color: white;
+  }
+
+  .photo__like-image path {
+    fill: white;
+  }
+
+  .videos {
+    margin-bottom: 85px;
+  }
+
+  .video__screen {
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+  }
+}
